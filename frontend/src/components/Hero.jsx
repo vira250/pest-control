@@ -4,11 +4,12 @@ import Navbar from './Navbar'
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[940px] overflow-hidden rounded-b-[30px]">
+    <div className="relative w-full h-[960px] overflow-hidden rounded-b-[30px]">
       {/* Background Layers */}
-      <div className="fixed top-0 left-0 w-screen h-[1000px] bg-[url('src/assets/hero_section.png')] bg-cover bg-center bg-no-repeat blur-[3.7px] -z-10"></div>
-      <div className="fixed top-0 left-0 w-screen h-[1000px] rounded-b-[30px] bg-[linear-gradient(270deg,rgba(0,0,0,0.2)_0.12%,rgba(0,0,0,0.92)_100.45%)] -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('src/assets/hero_section.png')] bg-cover bg-center bg-no-repeat blur-[3.7px] -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full rounded-b-[30px] bg-[linear-gradient(270deg,rgba(0,0,0,0.2)_0.12%,rgba(0,0,0,0.92)_100.45%)] -z-10"></div>
 
+    <div className="px-[200px]">
       {/* Navbar */}
       <div>
         <Navbar />
@@ -103,6 +104,7 @@ const Hero = () => {
           />
         </motion.div>
       </div>
+    </div>
     </div>
   )
 }
