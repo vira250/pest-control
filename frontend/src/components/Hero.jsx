@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 
 const Hero = () => {
@@ -33,6 +34,8 @@ const Hero = () => {
           <p className="w-[449px] h-fit flex-shrink-0 text-white font-arial text-[14px] not-italic font-normal leading-normal tracking-[0.84px] mt-2">
             We safeguard your property from rodents, insects, and other pests using eco-friendly methods and experienced technicians. Trust Norats to keep your space clean and pest-free.
           </p>
+
+          <Link to="/booking">
           <motion.button
             className="flex w-[165px] h-[46px] px-[17px] py-[13px] pl-[19px] justify-center items-center flex-shrink-0 rounded-[5px] bg-[#03DCE0] cursor-pointer mt-4"
             initial={{ opacity: 0, x: 40 }}
@@ -50,6 +53,7 @@ const Hero = () => {
           >
             Schedule Service
           </motion.button>
+          </Link>
 
           {/* Stats Cards */}
           <div className="flex gap-6 mt-10">

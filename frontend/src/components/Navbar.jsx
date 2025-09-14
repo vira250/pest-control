@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -34,6 +35,7 @@ const Navbar = () => {
       </motion.ul>
 
       {/* Button */}
+      <Link to="/booking">
     <motion.button
   className="flex w-[165px] h-[46px] px-[17px] py-[13px] pl-[19px] justify-center items-center flex-shrink-0 rounded-[5px] bg-[#03DCE0] cursor-pointer mt-4"
   initial={{ opacity: 0, x: 40 }}
@@ -51,6 +53,7 @@ const Navbar = () => {
 >
   Schedule Service
 </motion.button>
+  </Link>
 
     </motion.div>
   )
